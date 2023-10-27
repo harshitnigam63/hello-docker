@@ -25,6 +25,6 @@ func main() {
 // controllers
 func serveHome(w http.ResponseWriter, r *http.Request) {
 	log.Println("GET for all courses")
-	envVar := os.Getenv("DISPLAY_TEXT")
+	envVar := os.Getenv("DISPLAY")
 	w.Write([]byte(fmt.Sprintf("<h1>Hello %v</h1>", envVar)))
 }
